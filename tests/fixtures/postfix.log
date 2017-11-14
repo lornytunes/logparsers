@@ -1,0 +1,12 @@
+Aug 18 19:14:56 worldab2 postfix/qmgr[30716]: 2D3A421422B: from=<Backup@hartwell-house.com>, size=961, nrcpt=1 (queue active)
+Aug 19 12:09:59 worldab2 postfix/smtp[8923]: 2B9DC2141E8: to=<notify@dstbusinesssystems.com>, relay=none, delay=197980, delays=197980/0.01/0.34/0, dsn=4.4.3, status=deferred (Host or domain name not found. Name service error for name=dstbusinesssystems.com type=MX: Host not found, try again)
+Aug 19 19:45:51 worldab2 postfix/qmgr[30716]: BE2642140EF: removed
+Aug 19 14:02:50 worldab2 postfix/smtpd[10309]: D8BD22140EF: client=localhost[127.0.0.1]
+Aug 19 21:34:28 worldab2 postfix/qmgr[30716]: 55EA22140EF: from=<webmaster@stgeorge.co.uk>, size=719, nrcpt=1 (queue active)
+Aug 18 18:37:18 worldab2 postfix/smtpd[31386]: 80D8921430C: client=localhost[127.0.0.1]
+Aug 18 11:04:53 worldab2 postfix/smtp[26651]: 2D3A421422B: to=<notify@dstbusinesssystems.com>, relay=none, delay=365798, delays=365798/0.01/0.14/0, dsn=4.4.3, status=deferred (Host or domain name not found. Name service error for name=dstbusinesssystems.com type=MX: Host not found, try again)
+Aug 19 20:45:03 worldab2 postfix/qmgr[30716]: AB132214164: from=<Backup@hartwell-house.com>, size=961, nrcpt=1 (queue active)
+Aug 19 14:30:01 worldab2 postfix/smtp[10631]: 2B9DC2141E8: to=<notify@dstbusinesssystems.com>, relay=none, delay=206382, delays=206381/0.01/0.35/0, dsn=4.4.3, status=deferred (Host or domain name not found. Name service error for name=dstbusinesssystems.com type=MX: Host not found, try again)
+Aug 18 09:19:53 worldab2 postfix/smtp[25773]: 2B9DC2141E8: to=<notify@dstbusinesssystems.com>, relay=none, delay=101374, delays=101374/0.01/0.44/0, dsn=4.4.3, status=deferred (Host or domain name not found. Name service error for name=dstbusinesssystems.com type=MX: Host not found, try again)
+Aug  3 06:25:03 worldab2 postfix/pickup[19287]: 69F6A214348: uid=0 from=<root>
+Aug 18 15:20:45 worldab2 postfix/smtpd[29013]: disconnect from unknown[115.94.15.154]
