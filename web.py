@@ -1,3 +1,7 @@
+"""
+Contains the definition of the base parser for web log files
+"""
+
 import re
 from datetime import datetime
 
