@@ -6,6 +6,13 @@ import argparse
 
 from logparsers import READER_MAP
 
+# egrep -h '/maillist/[A-Za-z@-\.]+/add/' test.log.* > mltest.log
+# logexporter -v -f apache -o mltest.tsv mltest.log 2>errs.txt
+# csvcut -t -n mlrequests.csv
+# group by column 5, count column 1
+# aggregate -d '\t' -k5  -c1 -p mltest.tsv
+# csvformat -t mltest.tsv > mltest.csv
+
 
 def main(reader, filenames, output, verbose):
     for i, filename in enumerate(filenames, start=1):
@@ -39,7 +46,7 @@ if __name__ == '__main__':
         '-o', '--out',
         type=argparse.FileType('w'), default=sys.stdout,
         metavar='OUTPUT',
-        help='The file where the unparseable lines should be written (default: write to stdout)')
+        help='The file where the output should be written (default: write to stdout)')
     parser.add_argument(
         '-v', '--verbose',
         action='store_true',

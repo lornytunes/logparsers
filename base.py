@@ -1,3 +1,6 @@
+from copy import copy
+
+
 def map_types(data, mapper):
     """
     Returns a copy of data with values coerced into the types specified in the mapper
@@ -33,6 +36,11 @@ class RegexLogfileReader(object):
             self.filename = None
         self.type_mapper = type_mapper
         self.data = None
+        self.__regex = copy(self.__class__.REGEX)
+
+    @property
+    def regex(self):
+        return self.__regex
 
     def __iter__(self):
         try:
@@ -41,7 +49,7 @@ class RegexLogfileReader(object):
             for line in self.file:
                 self.data = line.rstrip()
                 m = None
-                for reg in self.__class__.REGEX:
+                for reg in self.regex:
                     m = reg.match(self.data)
                     if m:
                         break

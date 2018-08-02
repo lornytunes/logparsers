@@ -32,7 +32,15 @@ class AuthLogfileReader(RegexLogfileReader):
             r"""
             ^(?P<timestamp>[A-Za-z]{3}[ ]+[\d]{1,2}\ \d\d:\d\d:\d\d)
             \ (?P<server>[a-z0-9]+)
-            \ (?P<process>[a-zA-Z]+)\[?(?P<process_id>[\d]+)?\]?:
+            \ (?P<process>[a-zA-Z\-]+)\[?(?P<process_id>[\d]+)?\]?:
+            \ (?P<message>.+)$
+            """,
+            re.VERBOSE
+        ),
+        re.compile(
+            r"""
+            ^(?P<timestamp>[A-Za-z]{3}[ ]+[\d]{1,2}\ \d\d:\d\d:\d\d)
+            \ (?P<server>[a-z0-9]+)
             \ (?P<message>.+)$
             """,
             re.VERBOSE
@@ -46,5 +54,5 @@ class AuthLogfileReader(RegexLogfileReader):
                 # so instead we guess the year part from the time the file was created
                 'timestamp': functools.partial(parse_auth_timestamp, get_file_date(filenameOrFile).year),
                 'process_id': lambda s: s and int(s) or None,
-                'process': lambda s: s.lower()
+                'process': lambda s: s and s.lower() or None
             })

@@ -18,7 +18,7 @@ class NginxLogfileReader(WebLogfileReader):
             \ (?P<duration>[\d\.]+)
             \ "(?P<referer>.*?)"
             \ "(?P<useragent>.*?)"
-            \ (?P<host>[a-z0-9\.\-]+)$
+            \ (?P<host>.+)$
             """,
             re.VERBOSE
         )
