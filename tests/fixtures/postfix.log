@@ -1,12 +1,50 @@
-Aug 18 19:14:56 worldab2 postfix/qmgr[30716]: 2D3A421422B: from=<Backup@hartwell-house.com>, size=961, nrcpt=1 (queue active)
-Aug 19 12:09:59 worldab2 postfix/smtp[8923]: 2B9DC2141E8: to=<notify@dstbusinesssystems.com>, relay=none, delay=197980, delays=197980/0.01/0.34/0, dsn=4.4.3, status=deferred (Host or domain name not found. Name service error for name=dstbusinesssystems.com type=MX: Host not found, try again)
-Aug 19 19:45:51 worldab2 postfix/qmgr[30716]: BE2642140EF: removed
-Aug 19 14:02:50 worldab2 postfix/smtpd[10309]: D8BD22140EF: client=localhost[127.0.0.1]
-Aug 19 21:34:28 worldab2 postfix/qmgr[30716]: 55EA22140EF: from=<webmaster@stgeorge.co.uk>, size=719, nrcpt=1 (queue active)
-Aug 18 18:37:18 worldab2 postfix/smtpd[31386]: 80D8921430C: client=localhost[127.0.0.1]
-Aug 18 11:04:53 worldab2 postfix/smtp[26651]: 2D3A421422B: to=<notify@dstbusinesssystems.com>, relay=none, delay=365798, delays=365798/0.01/0.14/0, dsn=4.4.3, status=deferred (Host or domain name not found. Name service error for name=dstbusinesssystems.com type=MX: Host not found, try again)
-Aug 19 20:45:03 worldab2 postfix/qmgr[30716]: AB132214164: from=<Backup@hartwell-house.com>, size=961, nrcpt=1 (queue active)
-Aug 19 14:30:01 worldab2 postfix/smtp[10631]: 2B9DC2141E8: to=<notify@dstbusinesssystems.com>, relay=none, delay=206382, delays=206381/0.01/0.35/0, dsn=4.4.3, status=deferred (Host or domain name not found. Name service error for name=dstbusinesssystems.com type=MX: Host not found, try again)
-Aug 18 09:19:53 worldab2 postfix/smtp[25773]: 2B9DC2141E8: to=<notify@dstbusinesssystems.com>, relay=none, delay=101374, delays=101374/0.01/0.44/0, dsn=4.4.3, status=deferred (Host or domain name not found. Name service error for name=dstbusinesssystems.com type=MX: Host not found, try again)
-Aug  3 06:25:03 worldab2 postfix/pickup[19287]: 69F6A214348: uid=0 from=<root>
-Aug 18 15:20:45 worldab2 postfix/smtpd[29013]: disconnect from unknown[115.94.15.154]
+Oct 22 06:26:30 django-live postfix/smtpd[29673]: connect from localhost[127.0.0.1]
+Oct 22 06:26:30 django-live postfix/smtpd[29673]: D21663F4D8: client=localhost[127.0.0.1]
+Oct 22 06:26:30 django-live postfix/cleanup[29676]: D21663F4D8: message-id=<20181022062630.28527.79834@django-live>
+Oct 22 06:26:30 django-live postfix/qmgr[2777]: D21663F4D8: from=<info@cais.com>, size=6794, nrcpt=1 (queue active)
+Oct 22 06:26:30 django-live postfix/smtpd[29673]: disconnect from localhost[127.0.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+Oct 22 06:26:30 django-live postfix/smtpd[29673]: connect from localhost[127.0.0.1]
+Oct 22 06:26:30 django-live postfix/smtpd[29673]: D62F340D59: client=localhost[127.0.0.1]
+Oct 22 06:26:30 django-live postfix/cleanup[29676]: D62F340D59: message-id=<20181022062630.28527.46716@django-live>
+Oct 22 06:26:30 django-live postfix/qmgr[2777]: D62F340D59: from=<info@cais.com>, size=6917, nrcpt=1 (queue active)
+Oct 22 06:26:30 django-live postfix/smtpd[29673]: disconnect from localhost[127.0.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+Oct 22 06:26:31 django-live postfix/smtp[29677]: D21663F4D8: to=<beth877@hotmail.com>, relay=hotmail-com.olc.protection.outlook.com[104.47.32.33]:25, delay=0.83, delays=0.01/0.01/0.32/0.5, dsn=2.6.0, status=sent (250 2.6.0 <20181022062630.28527.79834@django-live> [InternalId=22449794081038, Hostname=SN1NAM01HT155.eop-nam01.prod.protection.outlook.com] 12301 bytes in 0.173, 69.228 KB/sec Queued mail for delivery)
+Oct 22 06:26:31 django-live postfix/qmgr[2777]: D21663F4D8: removed
+Oct 22 06:26:32 django-live postfix/smtp[29678]: D62F340D59: to=<enquiries@cais.org.uk>, relay=cais-org-uk.mail.protection.outlook.com[213.199.154.234]:25, delay=1.3, delays=0/0.01/0.24/1, dsn=2.6.0, status=sent (250 2.6.0 <20181022062630.28527.46716@django-live> [InternalId=536870914994, Hostname=DB7P192MB0475.EURP192.PROD.OUTLOOK.COM] 14319 bytes in 0.462, 30.228 KB/sec Queued mail for delivery)
+Oct 22 06:26:32 django-live postfix/qmgr[2777]: D62F340D59: removed
+Oct 22 06:29:26 django-live postfix/qmgr[2777]: 653013F5C3: from=<info@essoweb.org>, size=4713, nrcpt=1 (queue active)
+Oct 22 06:29:26 django-live postfix/smtp[29950]: 653013F5C3: host mta5.am0.yahoodns.net[98.137.159.25] said: 421 4.7.0 [TSS04] Messages from 138.68.171.143 temporarily deferred due to user complaints - 4.16.55.1; see https://help.yahoo.com/kb/postmaster/SLN3434.html (in reply to MAIL FROM command)
+Oct 22 06:29:26 django-live postfix/smtp[29950]: 653013F5C3: lost connection with mta5.am0.yahoodns.net[98.137.159.25] while sending RCPT TO
+Oct 22 06:29:26 django-live postfix/smtp[29950]: 653013F5C3: to=<bogdanmastalier@yahoo.com>, relay=mta7.am0.yahoodns.net[74.6.137.65]:25, delay=80125, delays=80125/0.01/0.68/0.08, dsn=4.7.0, status=deferred (host mta7.am0.yahoodns.net[74.6.137.65] said: 421 4.7.0 [TSS04] Messages from 138.68.171.143 temporarily deferred due to user complaints - 4.16.55.1; see https://help.yahoo.com/kb/postmaster/SLN3434.html (in reply to MAIL FROM command))
+Oct 22 06:34:26 django-live postfix/qmgr[2777]: 5300544411: from=<info@essoweb.org>, size=5052, nrcpt=1 (queue active)
+Oct 22 06:34:26 django-live postfix/qmgr[2777]: AEE5C3FEBE: from=<info@denbighshireyouthservices.co.uk>, size=816, nrcpt=1 (queue active)
+Oct 22 06:34:26 django-live postfix/smtp[30104]: connect to denbighshireleisure.co.uk[138.68.171.143]:25: Connection refused
+Oct 22 06:34:26 django-live postfix/smtp[30104]: AEE5C3FEBE: to=<contact@denbighshireleisure.co.uk>, relay=none, delay=55163, delays=55162/0.01/0.15/0, dsn=4.4.1, status=deferred (connect to denbighshireleisure.co.uk[138.68.171.143]:25: Connection refused)
+Oct 22 06:34:26 django-live postfix/smtp[30103]: 5300544411: host mta7.am0.yahoodns.net[98.137.159.27] said: 421 4.7.0 [TSS04] Messages from 138.68.171.143 temporarily deferred due to user complaints - 4.16.55.1; see https://help.yahoo.com/kb/postmaster/SLN3434.html (in reply to MAIL FROM command)
+Oct 22 06:34:26 django-live postfix/smtp[30103]: 5300544411: lost connection with mta7.am0.yahoodns.net[98.137.159.27] while sending RCPT TO
+Oct 22 06:34:26 django-live postfix/smtp[30103]: 5300544411: to=<tinawiomar@yahoo.com>, relay=mta5.am0.yahoodns.net[74.6.137.64]:25, delay=412188, delays=412188/0.01/0.67/0.08, dsn=4.7.0, status=deferred (host mta5.am0.yahoodns.net[74.6.137.64] said: 421 4.7.0 [TSS04] Messages from 138.68.171.143 temporarily deferred due to user complaints - 4.16.55.1; see https://help.yahoo.com/kb/postmaster/SLN3434.html (in reply to MAIL FROM command))
+Oct 22 06:39:26 django-live postfix/qmgr[2777]: BAA4A3F614: from=<info@essoweb.org>, size=5304, nrcpt=1 (queue active)
+Oct 22 06:39:26 django-live postfix/qmgr[2777]: 127E444386: from=<info@essoweb.org>, size=5263, nrcpt=1 (queue active)
+Oct 22 06:39:26 django-live postfix/smtp[30253]: 127E444386: host mx-eu.mail.am0.yahoodns.net[212.82.101.46] said: 421 4.7.0 [TSS04] Messages from 138.68.171.143 temporarily deferred due to user complaints - 4.16.55.1; see https://help.yahoo.com/kb/postmaster/SLN3434.html (in reply to MAIL FROM command)
+Oct 22 06:39:26 django-live postfix/smtp[30253]: 127E444386: lost connection with mx-eu.mail.am0.yahoodns.net[212.82.101.46] while sending RCPT TO
+Oct 22 06:39:26 django-live postfix/smtp[30252]: BAA4A3F614: host mx-eu.mail.am0.yahoodns.net[188.125.73.87] said: 421 4.7.0 [TSS04] Messages from 138.68.171.143 temporarily deferred due to user complaints - 4.16.55.1; see https://help.yahoo.com/kb/postmaster/SLN3434.html (in reply to MAIL FROM command)
+Oct 22 06:39:26 django-live postfix/smtp[30252]: BAA4A3F614: lost connection with mx-eu.mail.am0.yahoodns.net[188.125.73.87] while sending RCPT TO
+Oct 22 06:39:26 django-live postfix/smtp[30252]: BAA4A3F614: to=<nicolae_bacalbasa@yahoo.ro>, relay=mx-eu.mail.am0.yahoodns.net[212.82.101.46]:25, delay=80358, delays=80358/0.01/0.1/0.02, dsn=4.7.0, status=deferred (host mx-eu.mail.am0.yahoodns.net[212.82.101.46] said: 421 4.7.0 [TSS04] Messages from 138.68.171.143 temporarily deferred due to user complaints - 4.16.55.1; see https://help.yahoo.com/kb/postmaster/SLN3434.html (in reply to MAIL FROM command))
+Oct 22 06:39:26 django-live postfix/smtp[30253]: 127E444386: to=<aristotelis.kechagias@yahoo.gr>, relay=mx-eu.mail.am0.yahoodns.net[188.125.73.87]:25, delay=235635, delays=235635/0.01/0.17/0.01, dsn=4.7.0, status=deferred (host mx-eu.mail.am0.yahoodns.net[188.125.73.87] said: 421 4.7.0 [TSS04] Messages from 138.68.171.143 temporarily deferred due to user complaints - 4.16.55.1; see https://help.yahoo.com/kb/postmaster/SLN3434.html (in reply to MAIL FROM command))
+Oct 22 06:44:26 django-live postfix/qmgr[2777]: D083B4015C: from=<info@bic-innovation.co.uk>, size=699, nrcpt=1 (queue active)
+Oct 22 06:44:26 django-live postfix/smtp[30358]: D083B4015C: host in.mx.trendmicro.eu[52.58.62.239] said: 450 4.1.8 <info@bic-innovation.co.uk>: Sender address rejected: Domain not found (in reply to RCPT TO command)
+Oct 22 06:44:26 django-live postfix/smtp[30358]: D083B4015C: to=<admin@bic-innovation.com>, relay=in.mx.trendmicro.eu[52.29.207.245]:25, delay=55102, delays=55101/0.01/0.15/0.02, dsn=4.1.8, status=deferred (host in.mx.trendmicro.eu[52.29.207.245] said: 450 4.1.8 <info@bic-innovation.co.uk>: Sender address rejected: Domain not found (in reply to RCPT TO command))
+Oct 22 06:44:44 django-live postfix/smtpd[30372]: connect from localhost[127.0.0.1]
+Oct 22 06:44:44 django-live postfix/smtpd[30372]: 330843F4D8: client=localhost[127.0.0.1]
+Oct 22 06:44:44 django-live postfix/cleanup[30374]: 330843F4D8: message-id=<20181022064444.28568.57212@django-live>
+Oct 22 06:44:44 django-live postfix/qmgr[2777]: 330843F4D8: from=<sgadmin@st-gerards.org>, size=19809, nrcpt=2 (queue active)
+Oct 22 06:44:44 django-live postfix/smtpd[30372]: disconnect from localhost[127.0.0.1] ehlo=1 mail=1 rcpt=2 data=1 quit=1 commands=6
+Oct 22 06:44:44 django-live postfix/smtp[30375]: 330843F4D8: to=<richard.jackson@worldspan.ltd.uk>, relay=none, delay=0.02, delays=0.01/0.01/0/0, dsn=5.4.4, status=bounced (Host or domain name not found. Name service error for name=worldspan.ltd.uk type=AAAA: Host not found)
+Oct 22 06:44:45 django-live postfix/smtp[30358]: 330843F4D8: to=<daniel.townsend@worldspan.co.uk>, relay=array1.theemaillaundry.net[213.133.110.70]:25, delay=1, delays=0.01/0/0.15/0.84, dsn=5.7.1, status=bounced (host array1.theemaillaundry.net[213.133.110.70] said: 550 5.7.1 <daniel.townsend@worldspan.co.uk>: Recipient address rejected: Message rejected due to: SPF fail - not authorized. Please see http://www.openspf.net/Why?s=mfrom;id=sgadmin@st-gerards.org;ip=138.68.171.143;r=daniel.townsend@worldspan.co.uk (in reply to RCPT TO command))
+Oct 22 06:44:45 django-live postfix/cleanup[30374]: 37EE5444B9: message-id=<20181022064445.37EE5444B9@django-live>
+Oct 22 06:44:45 django-live postfix/bounce[30376]: 330843F4D8: sender non-delivery notification: 37EE5444B9
+Oct 22 06:44:45 django-live postfix/qmgr[2777]: 37EE5444B9: from=<>, size=22627, nrcpt=1 (queue active)
+Oct 22 06:44:45 django-live postfix/qmgr[2777]: 330843F4D8: removed
+Oct 22 06:44:48 django-live postfix/smtp[30375]: 37EE5444B9: to=<sgadmin@st-gerards.org>, relay=stgerards-org0e.mail.protection.outlook.com[213.199.154.234]:25, delay=2.9, delays=0/0/0.65/2.3, dsn=2.6.0, status=sent (250 2.6.0 <20181022064445.37EE5444B9@django-live> [InternalId=14375255542372, Hostname=LO2P265MB0911.GBRP265.PROD.OUTLOOK.COM] 29785 bytes in 0.137, 211.167 KB/sec Queued mail for delivery)
+Oct 22 06:44:48 django-live postfix/qmgr[2777]: 37EE5444B9: removed
+Oct 22 06:49:26 django-live postfix/qmgr[2777]: 9C1A13F49B: from=<info@essoweb.org>, size=5237, nrcpt=1 (queue active)

@@ -31,9 +31,9 @@ class PostfixLogfileReader(RegexLogfileReader):
         re.compile(
             r"""
             ^(?P<timestamp>[A-Za-z]{3}[ ]+[\d]{1,2}\ \d\d:\d\d:\d\d)
-            \ (?P<server>[a-z0-9]+)
+            \ (?P<server>[a-z0-9-]+)
             \ postfix/(?P<process>[a-z]+)\[(?P<process_id>[\d]+)\]:
-            \ (?P<message_id>[A-Z0-9]{11}):
+            \ (?P<message_id>[A-Z0-9]+):
             \ (?P<message>.+)$
             """,
             re.VERBOSE
@@ -41,7 +41,7 @@ class PostfixLogfileReader(RegexLogfileReader):
         re.compile(
             r"""
             ^(?P<timestamp>[A-Za-z]{3}[ ]+[\d]{1,2}\ \d\d:\d\d:\d\d)
-            \ (?P<server>[a-z0-9]+)
+            \ (?P<server>[a-z0-9-]+)
             \ postfix/(?P<process>[a-z]+)\[(?P<process_id>[\d]+)\]:
             \ (?P<message>.+)$
             """,

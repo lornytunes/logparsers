@@ -12,6 +12,7 @@ from logparsers import READER_MAP
 # group by column 5, count column 1
 # aggregate -d '\t' -k5  -c1 -p mltest.tsv
 # csvformat -t mltest.tsv > mltest.csv
+# logexporter -v -f postfix all.log -o mail.tsv 2>errs.txt
 
 
 def main(reader, filenames, output, verbose):
